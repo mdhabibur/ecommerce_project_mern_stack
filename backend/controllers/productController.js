@@ -9,7 +9,7 @@ const getAllProducts = asyncHandler( async (req, res) => {
 	// res.json(products);
 
   //now we will add pagination system to product page and display 4 items per page
-  const pageSize = 2 //items per page
+  const pageSize = 4 //items per page
   const page = Number(req.query.pageNumber) || 1 //current page
 
   const keyword = req.query.keyword ? {
